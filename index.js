@@ -26,6 +26,7 @@ add.addEventListener('click', function(e) {
 
     //Assigning Values
     person = {
+        'id' : Math.floor(Math.random()*100),
         'age' : age,
         'rel' : rel,
         'smoker' : smoker
@@ -55,6 +56,7 @@ function displayFamily() {
             <p>Age: ${family[i].age}</p>
             <p>Relationship: ${family[i].rel}</p>
             <p>Do they Smoke? ${family[i].smoker}</p>
+            <button id='delete' 
         </div>
         `
         output.push(input);
